@@ -1,0 +1,15 @@
+1.Take input of name and age, and display whether the person is eligible for voting or not.  
+#include <stdio.h>
+int main()
+{
+    int age;
+    printf("Enter age :");
+    scanf("%d",&age);
+    
+    if( age >=18 )
+        printf("you can vote!");
+    else
+        printf("you cant vote");
+
+    return 0;
+}
