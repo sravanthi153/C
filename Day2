@@ -1,0 +1,48 @@
+Q: 
+A person went to apply for a voter card. Officer collected his date of birth. Officer is poor in mathematics. Now he is looking forward to check weather the person is eligible to apply for voter card or not? 
+With your programming skill can you help the poor officer to resolve this issue. 
+INPUT 1 
+12 7 1990 
+OUTPUT 1 
+HE CAN APPLY 
+
+INPUT 2  
+15 10 2010
+OUTPUT 2 
+HE CAN'T APPLY
+
+
+
+int main()
+{
+    int date, month , year;
+    scanf("%d%d%d",&date,&month,&year);
+    if(year<2003)
+    {
+        printf("HE CAN APPLY");
+    }
+    else if(year == 2003)
+    {
+        if(month<11)
+        {
+            printf("HE CAN APPLY");
+        }
+        else if(month == 11)
+        {
+            if(date <= 8)
+            {
+                printf("HE CAN APPLY");
+            }
+        }
+        else
+        {
+             printf("HE CAN'T APPLY");
+        }
+    }
+    else
+    {
+        printf("HE CAN'T APPLY");
+    }
+
+    return 0;
+}
